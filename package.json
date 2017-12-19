@@ -1,0 +1,36 @@
+{
+  "name": "papetrail-reports",
+  "version": "1.0.0",
+  "description": "Collection of reports from Papertrail",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telemark/papetrail-reports.git"
+  },
+  "keywords": [],
+  "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/telemark/papetrail-reports/issues"
+  },
+  "homepage": "https://github.com/telemark/papetrail-reports#readme",
+  "devDependencies": {
+    "ava": "0.24.0",
+    "coveralls": "3.0.0",
+    "nsp": "3.1.0",
+    "nyc": "11.3.0",
+    "standard": "10.0.3"
+  },
+  "dependencies": {
+    "axios": "0.17.1",
+    "dotenv": "4.0.0"
+  }
+}
