@@ -1,6 +1,6 @@
 require('dotenv').config()
 const axios = require('axios')
-const url = `https://papertrailapp.com/api/v1/events/search.json?system_id=portalen&q=verify-signin-jwt AND "JWT ok"&limit=10000`
+const url = `https://papertrailapp.com/api/v1/events/search.json?system_id=portalen&q=verify-signin-jwt AND "JWT ok"&limit=2500`
 
 axios.defaults.headers.common['X-Papertrail-Token'] = process.env.API_TOKEN
 
@@ -15,10 +15,11 @@ function filterData (events) {
 async function getData () {
   try {
     const { data } = await axios(url)
-    console.log(data.events[0])
-    console.log(data.events[data.events.length - 1])
+    console.log(`Analyzing ${data.events.length} events`)
+    console.log(`From ${data.events[0].display_received_at}`)
+    console.log(`To ${data.events[data.events.length - 1].display_received_at}`)
     const uniques = new Set(filterData(data.events))
-    console.log(uniques.size)
+    console.log(`Unique users: ${uniques.size}`)
   } catch (error) {
     console.error(error.message)
   }
