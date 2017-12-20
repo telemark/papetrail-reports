@@ -11,6 +11,7 @@
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
     "unique-users-live": "node index.js",
+    "unique-companies-live": "node lib/get-unique-companies",
     "extract-archive": "node lib/extract-archive-files.js"
   },
   "repository": {

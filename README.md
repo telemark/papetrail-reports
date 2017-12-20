@@ -37,9 +37,18 @@ Show number of unique users from the latest 2500 events
 $ npm run unique-users-live
 ```
 
+## Unique companies
+
+Show number of unique companies and their names from the latest 2500 events
+
+```sh
+$ npm run unique-companies-live
+```
+
 ## Extract archive files
 
-Gunzips all .gz files in archive and deletes zipped files after extraction
+Gunzips all .gz files in the archive directory and deletes zipped files after extraction.
+You can download archived log files from Papertrail 
 
 ```sh
 $ npm run extract-archive
