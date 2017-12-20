@@ -10,8 +10,8 @@
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
     "standard-fix": "standard --fix",
-    "start": "node index.js",
-    "extract-logs": "node lib/extract-archive-files.js"
+    "unique-users-live": "node index.js",
+    "extract-archive": "node lib/extract-archive-files.js"
   },
   "repository": {
     "type": "git",
