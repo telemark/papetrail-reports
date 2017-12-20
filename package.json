@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Collection of reports from Papertrail",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "standard && nsp check && ava",
     "test-offline": "standard && ava",
