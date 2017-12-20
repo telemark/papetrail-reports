@@ -1,6 +1,9 @@
 # IDE
 .vscode
 
+# Mac OS
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -62,3 +65,7 @@ typings/
 
 # Lock files
 package-lock.json
+
+# Logs
+*.gz
+*.tsv
