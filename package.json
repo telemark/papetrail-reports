@@ -12,7 +12,8 @@
     "standard-fix": "standard --fix",
     "unique-users-live": "node index.js",
     "unique-companies-live": "node lib/get-unique-companies",
-    "extract-archive": "node lib/extract-archive-files.js"
+    "extract-archive": "node lib/extract-archive-files.js",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,9 @@
   "keywords": [],
   "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
   "license": "MIT",
+  "engines": {
+    "node": ">=10.1.0"
+  },
   "bugs": {
     "url": "https://github.com/telemark/papetrail-reports/issues"
   },
