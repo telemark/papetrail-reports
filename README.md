@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/telemark/papetrail-reports.svg?branch=master)](https://travis-ci.org/telemark/papetrail-reports)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/papetrail-reports.svg)](https://greenkeeper.io/)
 
 # papetrail-reports
 
@@ -57,5 +56,3 @@ $ npm run extract-archive
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of papetrail-reports](https://robots.kebabstudios.party/papetrail-reports.png "Robohash image of papetrail-reports")
