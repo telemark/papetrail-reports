@@ -23,7 +23,7 @@
   "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
   "license": "MIT",
   "engines": {
-    "node": ">=10.1.0"
+    "node": ">=10.3.0"
   },
   "bugs": {
     "url": "https://github.com/telemark/papetrail-reports/issues"
