@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "standard && nsp check && ava",
+    "test": "standard && npm audit && ava",
     "test-offline": "standard && ava",
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
@@ -23,7 +23,7 @@
   "author": "Geir Gåsodden <geir.gasodden@pythonia.no> (https://github.com/zrrrzzt)",
   "license": "MIT",
   "engines": {
-    "node": ">=10.3.0"
+    "node": ">=10.13.0"
   },
   "bugs": {
     "url": "https://github.com/telemark/papetrail-reports/issues"
@@ -32,7 +32,6 @@
   "devDependencies": {
     "ava": "0.25.0",
     "coveralls": "3.0.2",
-    "nsp": "3.2.1",
     "nyc": "13.1.0",
     "standard": "12.0.1"
   },
