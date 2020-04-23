@@ -31,7 +31,7 @@
   "homepage": "https://github.com/telemark/papetrail-reports#readme",
   "devDependencies": {
     "ava": "3.4.0",
-    "coveralls": "3.0.13",
+    "coveralls": "3.0.14",
     "nyc": "15.0.1",
     "standard": "13.1.0"
   },
